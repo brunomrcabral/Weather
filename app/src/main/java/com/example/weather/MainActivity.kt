@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         val permissions = arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE)
         requestPermissions(permissions, 0x512)
 
-        val dir   = File("/sdcard/Weather/")
+        val dir   = File("/sdcard/Weather")
         val file  = File(dir.toString() + "Response.xml")
         Log.d("Paths", dir.toString())
 
@@ -84,6 +84,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
-    fun parseResponse(){
+    fun parseResponse(){ // Dentro do dia activo d1 A TEMP MAX esta no span class maxima changeUnitT
 
     }
